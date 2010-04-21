@@ -14,6 +14,7 @@ def buchtimer(maxtime=0.2):
             timediff = time.time() - starttime
             if timediff > maxtime:
                 print 'Func %s took %s seconds (maxtime=%s).' % (func, timediff, maxtime)
+            return result
         return wrap2
     return wrap1
 
